@@ -81,16 +81,16 @@ class House extends Component {
         <div>
           <InputControl
             placeholderText="Name"
-            className="form-group--start"
-            inputClassName="form-control--start"
+            className="form-group"
+            inputClassName="form-control"
+            title="Название проекта"
             value=""
             name="project_name"
             required
           />
-          <div className="title" style={{marginTop: 50}}>Uncontrolled Component</div>
-          <h4>Clone items from left to right. DOM elements are duplicated.</h4>
+          <h4>Выберите системы, которые хотите установить.</h4>
           <div className="row">
-            <div className="col-sm-6">
+            <div className="col-sm-3">
               <Sortable
                 name='test'
                 options={{
@@ -107,14 +107,29 @@ class House extends Component {
               >
                 {cloneUncontrolled}
               </Sortable>
-              <button type='button' onClick={this.onAddBtnClick}>Add input</button>
+
+              <div className="form-group mt20">
+                <div className="">
+                  <button type='button' className='btn btn-danger-dark' onClick={this.onAddBtnClick}>Добавить комнату</button>
+                </div>
+              </div>
+
             </div>
-            {this.state.roomList.map(function(input, index) {
-                    return input;
-                })}
+
+            <div className="col-sm-6">
+              {this.state.roomList.map(function(input, index) {
+                      return input;
+                  })}
+            </div>
+
           </div>
         </div>
-        <button type='submit'>Save</button>
+
+        <div className="form-group mt20">
+          <div className="col-sm-offset-3 col-sm-7">
+            <button type='submit' className='btn btn-danger-dark' >Сохранить и получить информацию</button>
+          </div>
+        </div>
       </Form>
     );
   }

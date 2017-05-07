@@ -19,9 +19,6 @@ export class UserPanel extends Component {
       <ul className="fl-right">
         <li>
           <div className="private-box">
-            <Link className="private-box__icon" to="/">
-              <img src={hasAvatar(this.props.user.profile.avatar_url)} alt="Avatar" />
-            </Link>
             <span className="private-box__info">
               <p>{this.props.user.profile.first_name} {this.props.user.profile.last_name}</p>
               <Link to="/" className="private-box__link" onClick={() => this.props.logoutRequest()}>

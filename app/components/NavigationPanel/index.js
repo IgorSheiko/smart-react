@@ -50,16 +50,6 @@ function NavigationPanel(props) {
             <FormattedMessage tagName="i18n" {...messages.cases} />
           </Link>
         </li>
-        <li className="menuhidden">
-          <Link to="/payments">
-            <FormattedMessage tagName="i18n" {...messages.payments} />
-          </Link>
-        </li>
-        <li className="menuhidden">
-          <Link to="/buy_points">
-            <FormattedMessage tagName="i18n" {...messages.points} />
-          </Link>
-        </li>
       </ul>
     );
   }

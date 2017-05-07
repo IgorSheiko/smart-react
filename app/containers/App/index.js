@@ -15,13 +15,10 @@ export function App(props) {
   return (
     <div className="AppWrapper">
       <Helmet
-        titleTemplate="%s - Battle.pro"
-        defaultTitle="Battle.pro"
+        titleTemplate="%s - martHome"
+        defaultTitle="SmartHome"
       />
       {React.Children.toArray(props.children)}
-      <div className="turn-screen">
-        <p>Пожалуйста, <br /> переверните устройство </p>
-      </div>
     </div>
   );
 }

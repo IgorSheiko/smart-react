@@ -1037,6 +1037,7 @@ injectGlobal`
       > li {
         height: 100%;
         vertical-align: top;
+        display: inline-block;
       }
     }
   }
@@ -1107,9 +1108,7 @@ injectGlobal`
   .menu > ul li {
     height: 100%;
   }
-  ul li {
-    display: inline-block;
-  }
+
   .private-box {
     display: inline-block;
     overflow: hidden;
@@ -1956,9 +1955,24 @@ injectGlobal`
 
   .block-list {
     padding: 20px 0;
-    max-width: 360px;
+    max-width: 100px;
     background-color: #fff;
-    border: 1px solid #eee;
+    border: 1px solid #2520D6;
 }
+
+.room-fields-inline {
+    position: relative;
+    .form-control {
+      width: 160px;
+    }
+    .right-list {
+      width: 160px;
+      float: right;
+      margin-top: -50px;
+      margin-right: 151px;
+     
+    }
+  }
+
 
 `;

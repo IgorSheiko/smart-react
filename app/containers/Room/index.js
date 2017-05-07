@@ -7,6 +7,7 @@ import FormWrapper from 'containers/ForgotPasswordForm/FormWrapper';
 import Draggable from 'react-draggable'; // The default
 import Sortable from 'react-sortablejs';
 import uniqueId from 'lodash/uniqueId';
+import InputControl from 'components/InputControl';
 
 
 class Room extends Component {
@@ -27,7 +28,18 @@ class Room extends Component {
       <li key={uniqueId()} data-id={val}>{val}</li>
     ));
     return (
-      <div className="col-sm-6">
+      <div className="form-horizontal mt20">
+        <div className="room-fields-inline clearfix">
+        <SelectControl
+          className=""
+          labelClassName=" col-sm-3 control-label"
+          divClassName="col-sm-3"
+          name={`room_type.${this.props.name}`}
+          title="Тип комнаты"
+          required
+          options={this.props.categories !== undefined ? this.props.categories : []}
+        />
+
         <Sortable
           options={{
             animation: 150,
@@ -37,7 +49,7 @@ class Room extends Component {
               put: ['all']
             }
           }}
-          className="block-list"
+          className="block-list right-list"
           tag="ul"
           onChange={(items) => {
             this.setState({ cloneControlledSource: items });
@@ -46,15 +58,7 @@ class Room extends Component {
         >
           {cloneControlledSource}
         </Sortable>
-        <SelectControl
-          className="form-group"
-          labelClassName="col-sm-3 control-label"
-          divClassName="col-sm-7"
-          name={`room_type.${this.props.name}`}
-          title="type"
-          required
-          options={this.props.categories !== undefined ? this.props.categories : []}
-        />
+        </div>
     </div>
     );
   }

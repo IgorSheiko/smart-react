@@ -11,14 +11,8 @@ function HotLinks() {
       <ul className="wrap">
         {
           [<HeaderLogo />,
-            <Link to="/search_duels">
-              <FormattedMessage tagName="i18n" {...messages.negotiationsSearch} />
-            </Link>,
             <Link to="/question">
               <FormattedMessage tagName="i18n" {...messages.question} />
-            </Link>,
-            <Link to="/rules">
-              <FormattedMessage tagName="i18n" {...messages.rules} />
             </Link>].map((item, index) => (
               <li key={index}>
                 {item}
