@@ -1,0 +1,6 @@
+export const DEFAULT_LOCALE = 'ru';
+export const SET_USER_DATA = 'app/App/SET_USER_DATA';
+export const SET_CASES_THEMES_DATA = 'app/App/SET_CASES_THEMES_DATA';
+export const GET_COUNTRIES_DATA_REQUEST = 'app/App/GET_COUNTRIES_DATA';
+export const UPDATE_AVATAR_REQUEST = 'app/App/UPDATE_AVATAR_REQUEST';
+export const UPDATE_AVATAR_SUCCESS = 'app/App/UPDATE_AVATAR_SUCCESS';

@@ -1,0 +1,2 @@
+export const GET_COUNTRIES_DATA_SUCCESS = 'app/SignUpPage/GET_COUNTRIES_DATA_SUCCESS';
+export const SIGN_UP_REQUEST = 'app/SignUpPage/SIGN_UP_REQUEST';

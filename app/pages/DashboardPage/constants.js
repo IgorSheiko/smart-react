@@ -1,0 +1,9 @@
+export const DUEL_TIMES_UPDATE_REQUEST = 'app/DashboardPage/DUEL_TIMES_UPDATE';
+export const DUEL_TIMES_UPDATE_SUCCESS = 'app/DashboardPage/DUEL_TIMES_UPDATE_SUCCESS';
+export const GET_COUNTRIES_DATA_REQUEST = 'app/DashboardPage/GET_COUNTRIES_DATA';
+export const GET_COUNTRIES_DATA_SUCCESS = 'app/DashboardPage/GET_COUNTRIES_DATA_SUCCESS';
+export const LOGOUT_REQUEST = 'app/DashboardPage/LOGOUT_REQUEST';
+export const PASSWORD_UPDATE_REQUEST = 'app/DashboardPage/PASSWORD_UPDATE_REQUEST';
+export const PASSWORD_UPDATE_SUCCESS = 'app/DashboardPage/PASSWORD_UPDATE_SUCCESS';
+export const PROFILE_UPDATE_REQUEST = 'app/DashboardPage/PROFILE_UPDATE';
+export const PROFILE_UPDATE_SUCCESS = 'app/DashboardPage/PROFILE_UPDATE_SUCCESS';
