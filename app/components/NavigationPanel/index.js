@@ -9,9 +9,6 @@ function NavigationPanel(props) {
   if (props.userRole === 'tutor') {
     menuLinks = (
       <ul className="fl-left">
-        <li className="menu-mobile-logo">
-          <MobileLogo className="active" />
-        </li>
         <li className="menuhidden">
           <Link to="/">
             <FormattedMessage tagName="i18n" {...messages.dashboard} />
